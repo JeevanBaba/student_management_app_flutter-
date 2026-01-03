@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/5aca33f8-ad65-410e-9505-7d5acdbc4bf5
 # Student Management Dashboard 🎓
 
 A modern, high-performance Flutter application featuring a clean design system, real-time data integration, and dynamic performance analytics.
