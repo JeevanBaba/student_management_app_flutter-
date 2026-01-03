@@ -4,8 +4,20 @@ A modern, high-performance Flutter application featuring a clean design system, 
 
 ---
 
-## 📺 Preview
-[Click here to watch the Demo Video](PASTE_YOUR_VIDEO_LINK_HERE)
+## 📺 Project Previews
+
+To demonstrate the full capability of the system, I have provided two distinct demonstrations:
+
+### 1. Mobile Experience & UI/UX
+This video showcases the app running natively on a mobile device. It highlights the smooth navigation between the **Dashboard** and **Performance** screens, the **Lottie animations**, custom **NUSAR** typography, and the seamless **Dark/Light mode** transition.
+* **[Watch Mobile Demo](PASTE_LINK_1_HERE)**
+
+### 2. Live Data Sync (REST API in Action)
+This video demonstrates the core engineering feat: **Data Persistence and Synchronization**. 
+* **Step 1**: Real-time data modification on the **MockAPI.io** cloud dashboard.
+* **Step 2**: Using the **Pull-to-Refresh** feature in the Flutter app to trigger an asynchronous `GET` request.
+* **Step 3**: Instant update of scores, automated letter grades, and the overall CGPA calculation.
+* **[Watch Live Sync Demo](PASTE_LINK_2_HERE)**
 
 ---
 
