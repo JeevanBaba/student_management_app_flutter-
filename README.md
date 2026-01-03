@@ -15,16 +15,12 @@ This video showcases the app running natively on a mobile device. It highlights 
 * **[Watch Mobile Demo](https://github.com/user-attachments/assets/5a8f798d-3fea-4a95-b377-d88b8dd61cec)**
 
 
-
-https://github.com/user-attachments/assets/5a8f798d-3fea-4a95-b377-d88b8dd61cec
-
-
 ### 2. Live Data Sync (REST API in Action)
 This video demonstrates the core engineering feat: **Data Persistence and Synchronization**. 
 * **Step 1**: Real-time data modification on the **MockAPI.io** cloud dashboard.
 * **Step 2**: Using the **Pull-to-Refresh** feature in the Flutter app to trigger an asynchronous `GET` request.
 * **Step 3**: Instant update of scores, automated letter grades, and the overall CGPA calculation.
-* **[Watch Live Sync Demo]([PASTE_LINK_2_HERE](https://github.com/user-attachments/assets/80470937-6e2a-445b-a440-33cf1f5c3936))**
+* **[Watch Live Sync Demo](https://github.com/user-attachments/assets/80470937-6e2a-445b-a440-33cf1f5c3936)**
 
 ---
 
