@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/5aca33f8-ad65-410e-9505-7d5acdbc4bf5
 # Student Management Dashboard 🎓
 
 A modern, high-performance Flutter application featuring a clean design system, real-time data integration, and dynamic performance analytics.
@@ -10,14 +12,19 @@ To demonstrate the full capability of the system, I have provided two distinct d
 
 ### 1. Mobile Experience & UI/UX
 This video showcases the app running natively on a mobile device. It highlights the smooth navigation between the **Dashboard** and **Performance** screens, the **Lottie animations**, custom **NUSAR** typography, and the seamless **Dark/Light mode** transition.
-* **[Watch Mobile Demo](PASTE_LINK_1_HERE)**
+* **[Watch Mobile Demo](https://github.com/user-attachments/assets/5a8f798d-3fea-4a95-b377-d88b8dd61cec)**
+
+
+
+https://github.com/user-attachments/assets/5a8f798d-3fea-4a95-b377-d88b8dd61cec
+
 
 ### 2. Live Data Sync (REST API in Action)
 This video demonstrates the core engineering feat: **Data Persistence and Synchronization**. 
 * **Step 1**: Real-time data modification on the **MockAPI.io** cloud dashboard.
 * **Step 2**: Using the **Pull-to-Refresh** feature in the Flutter app to trigger an asynchronous `GET` request.
 * **Step 3**: Instant update of scores, automated letter grades, and the overall CGPA calculation.
-* **[Watch Live Sync Demo](PASTE_LINK_2_HERE)**
+* **[Watch Live Sync Demo]([PASTE_LINK_2_HERE](https://github.com/user-attachments/assets/80470937-6e2a-445b-a440-33cf1f5c3936))**
 
 ---
 
