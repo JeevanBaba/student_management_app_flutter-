@@ -31,12 +31,11 @@ This video demonstrates the full-stack synchronization engine side-by-side with 
 * **Dynamic Analytics Matrix**: Features a horizontal sliding weekday timetable matrix with a native `RefreshIndicator`, an automated numeric grade mapper with keyboard focus tracking (`FocusNode`), and a live tracking Cumulative Grade Point Average (CGPA) calculation engine.
 
 ---
-
+---
 ## 🛠️ Project Structure
 
 The project follows a clean, modular layer-by-feature directory structure to isolate presentation, business logic, and core configuration assets:
 
-```text
 lib/
 ├── core/          # Core theme configurations, global styles, and application constants
 ├── providers/     # Centralized Riverpod state layers (Grades, Timetable, Theme management)
@@ -46,7 +45,7 @@ lib/
 .env               # Local secure credentials file (Git ignored for security)
 supabase_schema.sql # Relational database schema migration and custom RPC function script
 
-🚀 Getting Started
+Getting Started
 Prerequisites
 
     Flutter SDK (Latest Stable Channel)
@@ -61,6 +60,7 @@ Bash
 
 git clone https://github.com/your-username/student_management_app.git
 cd student_management_app
+
 
     Install project dependencies:
 
