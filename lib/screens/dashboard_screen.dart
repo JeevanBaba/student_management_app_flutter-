@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import '../providers/theme_provider.dart';
 import '../widgets/stat_card.dart';
 import '../widgets/class_tile.dart';
 import 'grades_screen.dart';
 import 'package:lottie/lottie.dart';
 
-class DashboardScreen extends StatelessWidget {
-  final bool isDarkMode;
-  final Function(bool) onThemeChanged;
-
-  DashboardScreen({required this.isDarkMode, required this.onThemeChanged});
+class DashboardScreen extends ConsumerWidget {
+  const DashboardScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final isDarkMode = ref.watch(themeProvider);
+    final Function(bool) onThemeChanged = (bool val) {
+      ref.read(themeProvider.notifier).state = val;
+    };
+
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -77,7 +82,7 @@ class DashboardScreen extends StatelessWidget {
                           MaterialPageRoute(
                             builder:
                                 (context) =>
-                                    GradesScreen(isDarkMode: isDarkMode),
+                                    const GradesScreen(),
                           ),
                         ),
                     child: StatCard(
@@ -108,16 +113,22 @@ class DashboardScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder:
-                          (context) => GradesScreen(isDarkMode: isDarkMode),
+                          (context) => const GradesScreen(),
                     ),
                   ),
             ),
             ClassTile(
               title: "Scheduled Time Table",
               isDarkMode: isDarkMode,
-              onTap: () {
-                // Future implementation: TimeTableScreen
-              },
+              onTap: () => context.push('/timetable'),
+            ),
+            const SizedBox(height: 20),
+            
+            // PROMINENT TEACHER ACTION BUTTON
+            ClassTile(
+              title: "Teacher Access: Enter Marks",
+              isDarkMode: isDarkMode,
+              onTap: () => context.push('/teacher-entry'),
             ),
           ],
         ),
