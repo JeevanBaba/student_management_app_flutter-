@@ -30,8 +30,13 @@ class TimetableScreen extends ConsumerWidget {
             return const Center(child: Text('No classes scheduled.', style: TextStyle(fontFamily: 'Poppins', fontSize: 16, color: Colors.grey)));
           }
 
-          return ListView.builder(
-            padding: const EdgeInsets.all(20.0),
+          return RefreshIndicator(
+            color: const Color(0xFF1E88E5),
+            onRefresh: () async {
+              await ref.refresh(timetableProvider.future);
+            },
+            child: ListView.builder(
+              padding: const EdgeInsets.all(20.0),
             itemCount: schedule.length,
             itemBuilder: (context, index) {
               final item = schedule[index];
@@ -123,6 +128,7 @@ class TimetableScreen extends ConsumerWidget {
                 ),
               );
             },
+            ),
           );
         },
       ),
