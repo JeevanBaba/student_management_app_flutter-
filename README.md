@@ -31,11 +31,12 @@ This video demonstrates the full-stack synchronization engine side-by-side with 
 * **Dynamic Analytics Matrix**: Features a horizontal sliding weekday timetable matrix with a native `RefreshIndicator`, an automated numeric grade mapper with keyboard focus tracking (`FocusNode`), and a live tracking Cumulative Grade Point Average (CGPA) calculation engine.
 
 ---
----
-## 🛠️ Project Structure
+
+🛠️ Project Structure
 
 The project follows a clean, modular layer-by-feature directory structure to isolate presentation, business logic, and core configuration assets:
 
+```text
 lib/
 ├── core/          # Core theme configurations, global styles, and application constants
 ├── providers/     # Centralized Riverpod state layers (Grades, Timetable, Theme management)
@@ -44,43 +45,44 @@ lib/
 └── main.dart      # Global app entrypoint and initialized environment configurations
 .env               # Local secure credentials file (Git ignored for security)
 supabase_schema.sql # Relational database schema migration and custom RPC function script
+```
 
-Getting Started
+
+🚀 Getting Started
 Prerequisites
 
-    Flutter SDK (Latest Stable Channel)
+Flutter SDK: Latest stable channel installed and configured.
 
-    A configured Supabase project instance
+Supabase Account: An active Supabase project instance.
 
 Installation & Setup
 
-    Clone the repository:
+1. Clone the repository:
+    
+    ```bash 
+    git clone https://github.com/your-username/student_management_app.git
+    cd student_management_app
+    ```
 
-Bash
+2. Install project dependencies:
+    
+    ```text
+    bash
+    flutter pub get
+    ```
 
-git clone https://github.com/your-username/student_management_app.git
-cd student_management_app
+3. Configure Environment Variables:
+   Create a .env file in the root directory of the project to cleanly hide your secrets:
+    
+    ```text env
+    SUPABASE_URL=https://your-project-id.supabase.co
+    SUPABASE_ANON_KEY=your-actual-long-jwt-anon-public-key
+    ```
 
+4. Database Initialization:
+   Execute the query scripts inside your local supabase_schema.sql file directly within your Supabase SQL Editor workspace to generate the necessary underlying data structures and the relational get_scheduled_timetable RPC function.
 
-    Install project dependencies:
-
-Bash
-
-flutter pub get
-
-    Configure Environment Variables:
-    Create a .env file in the root directory of the project and supply your active Supabase credentials:
-
-Code snippet
-
-SUPABASE_URL=https://your-project-id.supabase.co
-SUPABASE_ANON_KEY=your-actual-long-jwt-anon-public-key
-
-    Database Initialization:
-    Execute the query scripts inside supabase_schema.sql directly within your Supabase SQL Editor to generate the necessary subjects and timetable_slots tables alongside the relational get_scheduled_timetable RPC function.
-
-    Run the application:
-
-Bash
-
-flutter run
+5. Run the application:
+    ```bash
+    flutter run
+    ```
